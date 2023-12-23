@@ -1,5 +1,4 @@
-module github.com/keiththompson/homebridge-client-go
-
+module github.com/keiththompson/homebridge
 go 1.21.5
 
 require github.com/go-resty/resty/v2 v2.10.0
