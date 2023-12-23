@@ -55,11 +55,11 @@ func (c *APIClient) Login(username, password, otp string) error {
     return nil
 }
 
-func (c *APIClient) getServerPairing(endpoint string) {
+func (c *APIClient) GetServerPairing() {
     // Example: GET request using the token
     resp, err := c.httpClient.R().
         SetAuthToken(c.Token).
-        Get(c.BaseURL + endpoint)
+        Get(c.BaseURL + "/api/server/pairing")
 
     if err != nil {
         log.Fatalf("Error on request: %v", err)
