@@ -65,5 +65,5 @@ func (c *APIClient) GetServerPairing() {
         log.Fatalf("Error on request: %v", err)
     }
 
-    log.Printf("Response: %v", resp)
+    return resp
 }
